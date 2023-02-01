@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            text-decoration: none;
+            align-self: center;
+        }
+        li{
+            list-style: none;
+            float: left;
+            padding: 20px;
+            width: 100px;
+            height: 25px;
+            border-radius: 15px;
+        }
+        a:hover{
+            background: green;
+        }
+        li:nth-child(2n){
+            background: yellow;
+        }  
+        li:nth-child(2n+1){
+            background: orange;
+        }
+        #center{
+            background: gold;
+            padding: 30px;
+            width: 800px;
+            height: 1000px;
+        }
+        #top{
+            padding: 30px;
+            width: 800px;
+            height: 100px;
+            background: green;
+        }
+        ul{
+            text-align: center;
+        }
+        td{
+            background: white;
+            font-size: 20px;
+            text-align: center;
+            background-color: khaki;
+        }    
+        th{
+            background-color: red;
+            font-size: larger;
+        }
+        </style>
+</head>
+<body>
+    <div id="total">
+        <div id="top">
+            <ul>
+                <li >
+                    <a href="page2.html">회원가입</a>
+                </li>
+                <li><a href="page3.html">제품정보</a>
+                </li>
+                <li>
+                    <a href="page4.html">게시판</a>
+                </li>
+                <li>
+                    <a href="page5.html">장바구니</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <div id="center">
+        <table border="1">
+            <tr>
+                <th>
+                    항목
+                </th>
+                <th>
+                    입력
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    번호
+                </td>
+                <td>
+                    <input type="text" name="" id="" style="background-color :aquamarine">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    제목
+                </td>
+                <td>
+                    <input type="text" name="" id="" style="background-color :aquamarine">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    내용
+                </td>
+                <td>
+                    <input type="text" name="" id="" style="background-color :aquamarine">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    작성자
+                </td>
+                <td >
+                    <input type="text" name="" id="" style="background-color :aquamarine">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button>글쓰기완료</button>
+                </td>
+            </tr>
+              
+        </table>
+    </div>
+    
+</body>
+</html>

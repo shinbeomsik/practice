@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            text-decoration: none;
+            align-self: center;
+        }
+        li{
+            list-style: none;
+            float: left;
+            padding: 20px;
+            width: 100px;
+            height: 25px;
+            border-radius: 15px;
+        }
+        a:hover{
+            background: green;
+        }
+        li:nth-child(2n){
+            background: yellow;
+        }  
+        li:nth-child(2n+1){
+            background: orange;
+        }
+        #center{
+            background: gold;
+            padding: 30px;
+            width: 800px;
+            height: 1000px;
+        }
+        #top{
+            padding: 30px;
+            width: 800px;
+            height: 100px;
+            background: green;
+        }
+        ul{
+            text-align: center;
+        }
+        td{
+            background: white;
+            font-size: 20px;
+        }    
+        </style>
+</head>
+<body>
+    <div id="total">
+        <div id="top">
+            <ul>
+                <li >
+                    <a href="page2.html">회원가입</a>
+                </li>
+                <li><a href="page3.html">제품정보</a>
+                </li>
+                <li>
+                    <a href="page4.html">게시판</a>
+                </li>
+                <li>
+                    <a href="page5.html">장바구니</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <div id="center">
+        <h3>검색 단어입력</h3>
+        <form action="보내는 서버주소">
+            검색어 <input type="text">
+            <button>검색어 전송</button>
+        </form>
+        <hr color="blue">
+        <form action="보내는 서버주소">
+            <table>
+                <tr>
+                    <td>아이디</td>
+                    <td><input type="text" name="" id="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>패스워드</td>
+                    <td><input type="password" name="" id="">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="button" value="로그인처리요청">
+                    </td> 
+                </tr>
+            </table>
+        </form>
+        <hr color="red">
+        <form action="보내는서버주소">
+            <table>
+                <tr>
+                    <td align="center">아이디
+                    </td>
+                    <td><input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">패스워드  
+                    </td>
+                    <td><input type="password">
+                    </td>
+                <tr>
+                    <td align="center">이름
+                    </td>
+                    <td><input type="text" placeholder="성과 이름을 순서대로 붙여쓰기">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">성별
+                    </td>
+                    <td><input type="radio" name="gender">남자<input type="radio" name="gender">여자
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">취미
+                    </td>
+                    <td><input type="checkbox" name="hobby">등산<input type="checkbox" name="hobby">독서<input type="checkbox" name="hobby">축구<input type="checkbox" name="hobby">달리기
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">전화번호</td>
+                    <td>
+                        <select>
+                            <option>SKT</option>
+                            <option>KT</option>
+                            <option>LG</option>
+                            <option>알뜰폰</option>
+                        </select>
+                        <input type="number" placeholder="-없이 숫자만">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">생년월일
+                    </td>
+                    <td><input type="date">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">가입한 날짜
+                    </td>
+                    <td><input type="datetime-local">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">가입한 주
+                    </td>
+                    <td><input type="week">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">하고 싶은 말
+                    </td>
+                    <td><textarea cols="30" rows="10" placeholder="100글자 이내로 써주세요"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"> <button>회원 처리 요청</button>
+                    </td>
+                   
+                </tr>
+                
+            </table>
+        </form>
+    </div>
+    
+</body>
+</html>
