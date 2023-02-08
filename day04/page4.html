@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="out.js">
+        
+    </script>
+    <script>
+        
+
+        function check_pw() {
+            pw3 = document.getElementById('pw').value
+            pw4 = document.getElementById('pw1').value
+ 
+            if (pw3 == pw4) {
+               result.innerHTML = "<font color = green> 일치 </font> <img src = 'sus.jpg' width=100 height =100>"
+            } else { 
+               result.innerHTML = "<font color = red> 불일치 </font> <img src = 'fal.jpg' width=100 height =100>"
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>자바 스크립트 테스트</h1>
+    <hr color="blue">
+    아이디: <input type="text" id="id" value="test">
+    <button onclick="check_id()">글자수 체크</button>
+    <br>
+    패스워드: <input type="text" id="pw" value="1234">
+    <br>
+    패스워드2: <input type="text" id="pw1" value="1234">
+    <button onclick="check_pw()">패스워드 확인</button>
+    <hr color="red">
+    <div id="result">
+        결과내는곳
+    </div>
+
+    
+</body>
+</html>
